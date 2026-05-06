@@ -67,6 +67,12 @@ The static files will be generated in the `dist` folder.
 ### Deploy to Vercel
 
 1. Push your code to GitHub
+
+# git add .
+# git commit -m "first commit"
+# git branch -M main
+# git push -u origin main
+
 2. Go to [vercel.com](https://vercel.com) and import your repository
 3. Vercel will auto-detect Next.js and configure build settings
 4. Your site will be live in minutes

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import SplashScreen from './components/SplashScreen';
 
 export const metadata: Metadata = {
   title: 'Dr. Michael Chen - Cardiologist',
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="antialiased" suppressHydrationWarning>{children}</body>
+      <body className="antialiased" suppressHydrationWarning>
+        <SplashScreen />
+        {children}
+      </body>
     </html>
   );
 }
